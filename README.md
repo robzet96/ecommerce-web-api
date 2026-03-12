@@ -36,3 +36,14 @@ The following Azure services were used:
 2. GitHub Actions workflow builds the project.
 3. The application is automatically deployed to Azure App Service.
 4. The API becomes publicly available after deployment.
+
+## Infrastructure as Code
+
+The project also includes Infrastructure as Code using **Bicep**.
+
+A **Storage Account** is deployed to Azure from the GitHub Actions pipeline using the `infra/main.bicep` template.
+
+This means the pipeline handles both:
+
+- application deployment
+- infrastructure deployment
